@@ -1,0 +1,479 @@
+{
+    "events": [
+        "Confirmation_of_receipt_complete",
+        "T02_Check_Confirmation_of_receipt_complete",
+        "T03_Adjust_Confirmation_of_receipt_complete",
+        "T06_Determine_necessity_of_stop_advice_complete",
+        "T10_Determine_necessity_to_stop_indication_complete",
+        "T04_Determine_Confirmation_of_receipt_complete",
+        "T05_Print_and_send_Confirmation_of_receipt_complete",
+        "T16_Report_reasons_to_hold_request_complete",
+        "T17_Check_report_Y_to_stop_indication_complete",
+        "T19_Determine_report_Y_to_stop_indication_complete",
+        "T20_Print_report_Y_to_stop_indication_complete",
+        "T11_Create_document_X_request_unlicensed_complete",
+        "T12_Check_document_X_request_unlicensed_complete",
+        "T14_Determine_document_X_request_unlicensed_complete",
+        "T15_Print_document_X_request_unlicensed_complete",
+        "T07_1_Draft_intern_advice_aspect_1_complete",
+        "T08_Draft_and_send_request_for_advice_complete",
+        "T09_1_Process_or_receive_external_advice_from_party_1_complete",
+        "T07_5_Draft_intern_advice_aspect_5_complete",
+        "T09_4_Process_or_receive_external_advice_from_party_4_complete",
+        "T07_3_Draft_intern_advice_hold_for_aspect_3_complete",
+        "T07_4_Draft_internal_advice_to_hold_for_type_4_complete",
+        "T07_2_Draft_intern_advice_aspect_2_complete",
+        "T13_Adjust_document_X_request_unlicensed_complete",
+        "T09_3_Process_or_receive_external_advice_from_party_3_complete",
+        "T18_Adjust_report_Y_to_stop_indicition_complete",
+        "T09_2_Process_or_receive_external_advice_from_party_2_complete"
+    ],
+    "conditionsFor": {
+        "Confirmation_of_receipt_complete": [],
+        "T02_Check_Confirmation_of_receipt_complete": [
+            "Confirmation_of_receipt_complete"
+        ],
+        "T03_Adjust_Confirmation_of_receipt_complete": [
+            "T02_Check_Confirmation_of_receipt_complete"
+        ],
+        "T06_Determine_necessity_of_stop_advice_complete": [
+            "Confirmation_of_receipt_complete"
+        ],
+        "T10_Determine_necessity_to_stop_indication_complete": [
+            "T06_Determine_necessity_of_stop_advice_complete"
+        ],
+        "T04_Determine_Confirmation_of_receipt_complete": [
+            "T02_Check_Confirmation_of_receipt_complete"
+        ],
+        "T05_Print_and_send_Confirmation_of_receipt_complete": [
+            "T02_Check_Confirmation_of_receipt_complete"
+        ],
+        "T16_Report_reasons_to_hold_request_complete": [
+            "T10_Determine_necessity_to_stop_indication_complete",
+            "T07_5_Draft_intern_advice_aspect_5_complete"
+        ],
+        "T07_3_Draft_intern_advice_hold_for_aspect_3_complete": [
+            "T16_Report_reasons_to_hold_request_complete",
+            "T06_Determine_necessity_of_stop_advice_complete"
+        ],
+        "T19_Determine_report_Y_to_stop_indication_complete": [
+            "T17_Check_report_Y_to_stop_indication_complete",
+            "T10_Determine_necessity_to_stop_indication_complete",
+            "T07_5_Draft_intern_advice_aspect_5_complete"
+        ],
+        "T20_Print_report_Y_to_stop_indication_complete": [
+            "T19_Determine_report_Y_to_stop_indication_complete",
+            "T06_Determine_necessity_of_stop_advice_complete",
+            "T16_Report_reasons_to_hold_request_complete"
+        ],
+        "T11_Create_document_X_request_unlicensed_complete": [
+            "T10_Determine_necessity_to_stop_indication_complete",
+            "T07_1_Draft_intern_advice_aspect_1_complete"
+        ],
+        "T12_Check_document_X_request_unlicensed_complete": [
+            "T11_Create_document_X_request_unlicensed_complete",
+            "T06_Determine_necessity_of_stop_advice_complete",
+            "T03_Adjust_Confirmation_of_receipt_complete"
+        ],
+        "T14_Determine_document_X_request_unlicensed_complete": [
+            "T04_Determine_Confirmation_of_receipt_complete",
+            "T12_Check_document_X_request_unlicensed_complete",
+            "T10_Determine_necessity_to_stop_indication_complete",
+            "T07_1_Draft_intern_advice_aspect_1_complete"
+        ],
+        "T15_Print_document_X_request_unlicensed_complete": [
+            "T05_Print_and_send_Confirmation_of_receipt_complete",
+            "T14_Determine_document_X_request_unlicensed_complete",
+            "T06_Determine_necessity_of_stop_advice_complete",
+            "T11_Create_document_X_request_unlicensed_complete",
+            "T03_Adjust_Confirmation_of_receipt_complete"
+        ],
+        "T07_1_Draft_intern_advice_aspect_1_complete": [
+            "T06_Determine_necessity_of_stop_advice_complete"
+        ],
+        "T07_3_Draft_intern_advice_hold_for_aspect_3_complete": [
+            "T06_Determine_necessity_of_stop_advice_complete"
+        ],
+        "T09_1_Process_or_receive_external_advice_from_party_1_complete": [
+            "T08_Draft_and_send_request_for_advice_complete",
+            "Confirmation_of_receipt_complete"
+        ],
+        "T07_5_Draft_intern_advice_aspect_5_complete": [
+            "T06_Determine_necessity_of_stop_advice_complete"
+        ],
+        "T09_4_Process_or_receive_external_advice_from_party_4_complete": [
+            "T08_Draft_and_send_request_for_advice_complete",
+            "Confirmation_of_receipt_complete"
+        ],
+        "T07_3_Draft_intern_advice_hold_for_aspect_3_complete": [
+            "T06_Determine_necessity_of_stop_advice_complete"
+        ],
+        "T07_4_Draft_internal_advice_to_hold_for_type_4_complete": [
+            "T06_Determine_necessity_of_stop_advice_complete"
+        ],
+        "T07_2_Draft_intern_advice_aspect_2_complete": [
+            "T06_Determine_necessity_of_stop_advice_complete"
+        ],
+        "T13_Adjust_document_X_request_unlicensed_complete": [
+            "T04_Determine_Confirmation_of_receipt_complete",
+            "T05_Print_and_send_Confirmation_of_receipt_complete",
+            "T12_Check_document_X_request_unlicensed_complete",
+            "Confirmation_of_receipt_complete",
+            "T10_Determine_necessity_to_stop_indication_complete"
+        ],
+        "T09_3_Process_or_receive_external_advice_from_party_3_complete": [
+            "T08_Draft_and_send_request_for_advice_complete",
+            "Confirmation_of_receipt_complete"
+        ],
+        "T18_Adjust_report_Y_to_stop_indicition_complete": [
+            "T04_Determine_Confirmation_of_receipt_complete",
+            "T05_Print_and_send_Confirmation_of_receipt_complete",
+            "T17_Check_report_Y_to_stop_indication_complete",
+            "Confirmation_of_receipt_complete",
+            "T10_Determine_necessity_to_stop_indication_complete"
+        ],
+        "T09_2_Process_or_receive_external_advice_from_party_2_complete": [
+            "T04_Determine_Confirmation_of_receipt_complete",
+            "T05_Print_and_send_Confirmation_of_receipt_complete",
+            "T09_1_Process_or_receive_external_advice_from_party_1_complete",
+            "T07_5_Draft_intern_advice_aspect_5_complete",
+            "T07_3_Draft_intern_advice_hold_for_aspect_3_complete",
+            "T09_3_Process_or_receive_external_advice_from_party_3_complete"
+        ]
+    },
+    "excludesTo": {
+        "Confirmation_of_receipt_complete": [
+            "Confirmation_of_receipt_complete"
+        ],
+        "T02_Check_Confirmation_of_receipt_complete": [],
+        "T03_Adjust_Confirmation_of_receipt_complete": [
+            "T09_4_Process_or_receive_external_advice_from_party_4_complete",
+            "T07_3_Draft_intern_advice_hold_for_aspect_3_complete",
+            "T07_4_Draft_internal_advice_to_hold_for_type_4_complete",
+            "T13_Adjust_document_X_request_unlicensed_complete",
+            "T18_Adjust_report_Y_to_stop_indicition_complete",
+            "T09_2_Process_or_receive_external_advice_from_party_2_complete",
+            "T17_Check_report_Y_to_stop_indication_complete"
+        ],
+        "T06_Determine_necessity_of_stop_advice_complete": [],
+        "T10_Determine_necessity_to_stop_indication_complete": [
+            "T10_Determine_necessity_to_stop_indication_complete",
+            "T09_2_Process_or_receive_external_advice_from_party_2_complete",
+            "T06_Determine_necessity_of_stop_advice_complete",
+            "T07_1_Draft_intern_advice_aspect_1_complete",
+            "T08_Draft_and_send_request_for_advice_complete",
+            "T07_5_Draft_intern_advice_aspect_5_complete",
+            "T07_3_Draft_intern_advice_hold_for_aspect_3_complete",
+            "T07_2_Draft_intern_advice_aspect_2_complete"
+        ],
+        "T04_Determine_Confirmation_of_receipt_complete": [],
+        "T05_Print_and_send_Confirmation_of_receipt_complete": [
+            "T05_Print_and_send_Confirmation_of_receipt_complete",
+            "T02_Check_Confirmation_of_receipt_complete",
+            "T04_Determine_Confirmation_of_receipt_complete",
+            "T03_Adjust_Confirmation_of_receipt_complete"
+        ],
+        "T16_Report_reasons_to_hold_request_complete": [
+            "T16_Report_reasons_to_hold_request_complete",
+            "T11_Create_document_X_request_unlicensed_complete",
+            "T12_Check_document_X_request_unlicensed_complete",
+            "T14_Determine_document_X_request_unlicensed_complete",
+            "T15_Print_document_X_request_unlicensed_complete",
+            "T09_1_Process_or_receive_external_advice_from_party_1_complete",
+            "T09_4_Process_or_receive_external_advice_from_party_4_complete",
+            "T07_4_Draft_internal_advice_to_hold_for_type_4_complete",
+            "T13_Adjust_document_X_request_unlicensed_complete",
+            "T09_3_Process_or_receive_external_advice_from_party_3_complete"
+        ],
+        "T07_3_Draft_intern_advice_hold_for_aspect_3_complete": [],
+        "T19_Determine_report_Y_to_stop_indication_complete": [
+            "T19_Determine_report_Y_to_stop_indication_complete",
+            "T17_Check_report_Y_to_stop_indication_complete"
+        ],
+        "T20_Print_report_Y_to_stop_indication_complete": [
+            "T20_Print_report_Y_to_stop_indication_complete"
+        ],
+        "T11_Create_document_X_request_unlicensed_complete": [
+            "T11_Create_document_X_request_unlicensed_complete",
+            "T16_Report_reasons_to_hold_request_complete",
+            "T17_Check_report_Y_to_stop_indication_complete",
+            "T19_Determine_report_Y_to_stop_indication_complete",
+            "T20_Print_report_Y_to_stop_indication_complete",
+            "T09_1_Process_or_receive_external_advice_from_party_1_complete",
+            "T09_4_Process_or_receive_external_advice_from_party_4_complete",
+            "T07_4_Draft_internal_advice_to_hold_for_type_4_complete",
+            "T09_3_Process_or_receive_external_advice_from_party_3_complete",
+            "T18_Adjust_report_Y_to_stop_indicition_complete",
+            "T03_Adjust_Confirmation_of_receipt_complete"
+        ],
+        "T12_Check_document_X_request_unlicensed_complete": [],
+        "T14_Determine_document_X_request_unlicensed_complete": [
+            "T14_Determine_document_X_request_unlicensed_complete",
+            "T02_Check_Confirmation_of_receipt_complete",
+            "T04_Determine_Confirmation_of_receipt_complete",
+            "T12_Check_document_X_request_unlicensed_complete"
+        ],
+        "T15_Print_document_X_request_unlicensed_complete": [
+            "T15_Print_document_X_request_unlicensed_complete"
+        ],
+        "T07_1_Draft_intern_advice_aspect_1_complete": [
+            "T16_Report_reasons_to_hold_request_complete",
+            "T17_Check_report_Y_to_stop_indication_complete",
+            "T19_Determine_report_Y_to_stop_indication_complete",
+            "T20_Print_report_Y_to_stop_indication_complete",
+            "T13_Adjust_document_X_request_unlicensed_complete",
+            "T18_Adjust_report_Y_to_stop_indicition_complete",
+            "T07_5_Draft_intern_advice_aspect_5_complete"
+        ],
+        "T07_3_Draft_intern_advice_hold_for_aspect_3_complete": [
+            "T16_Report_reasons_to_hold_request_complete",
+            "T17_Check_report_Y_to_stop_indication_complete",
+            "T19_Determine_report_Y_to_stop_indication_complete",
+            "T20_Print_report_Y_to_stop_indication_complete",
+            "T11_Create_document_X_request_unlicensed_complete",
+            "T12_Check_document_X_request_unlicensed_complete",
+            "T14_Determine_document_X_request_unlicensed_complete",
+            "T15_Print_document_X_request_unlicensed_complete",
+            "T13_Adjust_document_X_request_unlicensed_complete",
+            "T18_Adjust_report_Y_to_stop_indicition_complete"
+        ],
+        "T09_1_Process_or_receive_external_advice_from_party_1_complete": [
+            "T09_1_Process_or_receive_external_advice_from_party_1_complete",
+            "T08_Draft_and_send_request_for_advice_complete"
+        ],
+        "T07_5_Draft_intern_advice_aspect_5_complete": [
+            "T11_Create_document_X_request_unlicensed_complete",
+            "T12_Check_document_X_request_unlicensed_complete",
+            "T14_Determine_document_X_request_unlicensed_complete",
+            "T15_Print_document_X_request_unlicensed_complete",
+            "T13_Adjust_document_X_request_unlicensed_complete",
+            "T18_Adjust_report_Y_to_stop_indicition_complete"
+        ],
+        "T09_4_Process_or_receive_external_advice_from_party_4_complete": [
+            "T09_4_Process_or_receive_external_advice_from_party_4_complete",
+            "T03_Adjust_Confirmation_of_receipt_complete",
+            "T08_Draft_and_send_request_for_advice_complete",
+            "T07_5_Draft_intern_advice_aspect_5_complete",
+            "T07_3_Draft_intern_advice_hold_for_aspect_3_complete"
+        ],
+        "T07_3_Draft_intern_advice_hold_for_aspect_3_complete": [
+            "T03_Adjust_Confirmation_of_receipt_complete",
+            "T16_Report_reasons_to_hold_request_complete",
+            "T17_Check_report_Y_to_stop_indication_complete",
+            "T19_Determine_report_Y_to_stop_indication_complete",
+            "T20_Print_report_Y_to_stop_indication_complete",
+            "T11_Create_document_X_request_unlicensed_complete",
+            "T12_Check_document_X_request_unlicensed_complete",
+            "T14_Determine_document_X_request_unlicensed_complete",
+            "T15_Print_document_X_request_unlicensed_complete",
+            "T13_Adjust_document_X_request_unlicensed_complete",
+            "T18_Adjust_report_Y_to_stop_indicition_complete",
+            "T08_Draft_and_send_request_for_advice_complete"
+        ],
+        "T07_4_Draft_internal_advice_to_hold_for_type_4_complete": [
+            "T07_4_Draft_internal_advice_to_hold_for_type_4_complete",
+            "T03_Adjust_Confirmation_of_receipt_complete",
+            "T16_Report_reasons_to_hold_request_complete",
+            "T17_Check_report_Y_to_stop_indication_complete",
+            "T19_Determine_report_Y_to_stop_indication_complete",
+            "T20_Print_report_Y_to_stop_indication_complete",
+            "T11_Create_document_X_request_unlicensed_complete",
+            "T12_Check_document_X_request_unlicensed_complete",
+            "T14_Determine_document_X_request_unlicensed_complete",
+            "T15_Print_document_X_request_unlicensed_complete",
+            "T13_Adjust_document_X_request_unlicensed_complete",
+            "T18_Adjust_report_Y_to_stop_indicition_complete",
+            "T07_5_Draft_intern_advice_aspect_5_complete",
+            "T07_1_Draft_intern_advice_aspect_1_complete",
+            "T08_Draft_and_send_request_for_advice_complete",
+            "T07_3_Draft_intern_advice_hold_for_aspect_3_complete"
+        ],
+        "T07_2_Draft_intern_advice_aspect_2_complete": [
+            "T16_Report_reasons_to_hold_request_complete",
+            "T17_Check_report_Y_to_stop_indication_complete",
+            "T19_Determine_report_Y_to_stop_indication_complete",
+            "T20_Print_report_Y_to_stop_indication_complete",
+            "T11_Create_document_X_request_unlicensed_complete",
+            "T12_Check_document_X_request_unlicensed_complete",
+            "T14_Determine_document_X_request_unlicensed_complete",
+            "T15_Print_document_X_request_unlicensed_complete",
+            "T13_Adjust_document_X_request_unlicensed_complete",
+            "T18_Adjust_report_Y_to_stop_indicition_complete",
+            "T07_5_Draft_intern_advice_aspect_5_complete"
+        ],    
+        "T13_Adjust_document_X_request_unlicensed_complete": [
+            "T13_Adjust_document_X_request_unlicensed_complete"
+        ],
+        "T09_3_Process_or_receive_external_advice_from_party_3_complete": [
+            "T09_3_Process_or_receive_external_advice_from_party_3_complete"
+        ],
+        "T18_Adjust_report_Y_to_stop_indicition_complete": [
+            "T18_Adjust_report_Y_to_stop_indicition_complete"
+        ],
+        "T09_2_Process_or_receive_external_advice_from_party_2_complete": [
+            "T09_2_Process_or_receive_external_advice_from_party_2_complete",
+            "T10_Determine_necessity_to_stop_indication_complete",
+            "T07_3_Draft_intern_advice_hold_for_aspect_3_complete",
+            "T07_5_Draft_intern_advice_aspect_5_complete"
+        ]
+    },
+    "includesTo": {
+        "Confirmation_of_receipt_complete": [],
+        "T02_Check_Confirmation_of_receipt_complete": [],
+        "T03_Adjust_Confirmation_of_receipt_complete": [],
+        "T06_Determine_necessity_of_stop_advice_complete": [],
+        "T10_Determine_necessity_to_stop_indication_complete": [],
+        "T04_Determine_Confirmation_of_receipt_complete": [],
+        "T05_Print_and_send_Confirmation_of_receipt_complete": [
+            "T13_Adjust_document_X_request_unlicensed_complete"
+        ],
+        "T16_Report_reasons_to_hold_request_complete": [],
+        "T07_3_Draft_intern_advice_hold_for_aspect_3_complete": [
+            "T19_Determine_report_Y_to_stop_indication_complete",
+            "T18_Adjust_report_Y_to_stop_indicition_complete"
+        ],
+        "T19_Determine_report_Y_to_stop_indication_complete": [
+            "T20_Print_report_Y_to_stop_indication_complete"
+        ],
+        "T20_Print_report_Y_to_stop_indication_complete": [],
+        "T11_Create_document_X_request_unlicensed_complete": [],
+        "T12_Check_document_X_request_unlicensed_complete": [],
+        "T14_Determine_document_X_request_unlicensed_complete": [],
+        "T15_Print_document_X_request_unlicensed_complete": [],
+        "T07_1_Draft_intern_advice_aspect_1_complete": [],
+        "T07_3_Draft_intern_advice_hold_for_aspect_3_complete": [
+            "T09_3_Process_or_receive_external_advice_from_party_3_complete"
+        ],
+        "T09_1_Process_or_receive_external_advice_from_party_1_complete": [],
+        "T07_5_Draft_intern_advice_aspect_5_complete": [
+            "T09_2_Process_or_receive_external_advice_from_party_2_complete"
+        ],
+        "T09_4_Process_or_receive_external_advice_from_party_4_complete": [],
+        "T07_3_Draft_intern_advice_hold_for_aspect_3_complete": [],
+        "T07_4_Draft_internal_advice_to_hold_for_type_4_complete": [],
+        "T07_2_Draft_intern_advice_aspect_2_complete": [],
+        "T13_Adjust_document_X_request_unlicensed_complete": [],
+        "T09_3_Process_or_receive_external_advice_from_party_3_complete": [],
+        "T18_Adjust_report_Y_to_stop_indicition_complete": [],
+        "T09_2_Process_or_receive_external_advice_from_party_2_complete": []
+    },
+    "milestonesFor": {
+        "Confirmation_of_receipt_complete": [],
+        "T02_Check_Confirmation_of_receipt_complete": [],
+        "T03_Adjust_Confirmation_of_receipt_complete": [],
+        "T06_Determine_necessity_of_stop_advice_complete": [],
+        "T10_Determine_necessity_to_stop_indication_complete": [],
+        "T04_Determine_Confirmation_of_receipt_complete": [],
+        "T05_Print_and_send_Confirmation_of_receipt_complete": [],
+        "T16_Report_reasons_to_hold_request_complete": [],
+        "T07_3_Draft_intern_advice_hold_for_aspect_3_complete": [],
+        "T19_Determine_report_Y_to_stop_indication_complete": [],
+        "T20_Print_report_Y_to_stop_indication_complete": [],
+        "T11_Create_document_X_request_unlicensed_complete": [],
+        "T12_Check_document_X_request_unlicensed_complete": [],
+        "T14_Determine_document_X_request_unlicensed_complete": [],
+        "T15_Print_document_X_request_unlicensed_complete": [],
+        "T07_1_Draft_intern_advice_aspect_1_complete": [],
+        "T07_3_Draft_intern_advice_hold_for_aspect_3_complete": [],
+        "T09_1_Process_or_receive_external_advice_from_party_1_complete": [],
+        "T07_5_Draft_intern_advice_aspect_5_complete": [],
+        "T09_4_Process_or_receive_external_advice_from_party_4_complete": [],
+        "T07_3_Draft_intern_advice_hold_for_aspect_3_complete": [],
+        "T07_4_Draft_internal_advice_to_hold_for_type_4_complete": [],
+        "T07_2_Draft_intern_advice_aspect_2_complete": [],
+        "T13_Adjust_document_X_request_unlicensed_complete": [],
+        "T09_3_Process_or_receive_external_advice_from_party_3_complete": [],
+        "T18_Adjust_report_Y_to_stop_indicition_complete": [],
+        "T09_2_Process_or_receive_external_advice_from_party_2_complete": []
+    },
+    "responseTo": {
+        "Confirmation_of_receipt_complete": [],
+        "T02_Check_Confirmation_of_receipt_complete": [],
+        "T03_Adjust_Confirmation_of_receipt_complete": [],
+        "T06_Determine_necessity_of_stop_advice_complete": [],
+        "T10_Determine_necessity_to_stop_indication_complete": [],
+        "T04_Determine_Confirmation_of_receipt_complete": [],
+        "T05_Print_and_send_Confirmation_of_receipt_complete": [],
+        "T16_Report_reasons_to_hold_request_complete": [
+            "T17_Check_report_Y_to_stop_indication_complete"
+        ],
+        "T07_3_Draft_intern_advice_hold_for_aspect_3_complete": [
+            "T19_Determine_report_Y_to_stop_indication_complete"
+        ],
+        "T19_Determine_report_Y_to_stop_indication_complete": [
+            "T20_Print_report_Y_to_stop_indication_complete"
+        ],
+        "T20_Print_report_Y_to_stop_indication_complete": [],
+        "T11_Create_document_X_request_unlicensed_complete": [],
+        "T12_Check_document_X_request_unlicensed_complete": [],
+        "T14_Determine_document_X_request_unlicensed_complete": [
+            "T15_Print_document_X_request_unlicensed_complete"
+        ],
+        "T15_Print_document_X_request_unlicensed_complete": [],
+        "T07_1_Draft_intern_advice_aspect_1_complete": [],
+        "T07_3_Draft_intern_advice_hold_for_aspect_3_complete": [
+            "T06_Determine_necessity_of_stop_advice_complete"
+        ],
+        "T09_1_Process_or_receive_external_advice_from_party_1_complete": [
+            "T06_Determine_necessity_of_stop_advice_complete"
+        ],
+        "T07_5_Draft_intern_advice_aspect_5_complete": [],
+        "T09_4_Process_or_receive_external_advice_from_party_4_complete": [
+            "T06_Determine_necessity_of_stop_advice_complete"
+        ],
+        "T07_3_Draft_intern_advice_hold_for_aspect_3_complete": [
+            "T06_Determine_necessity_of_stop_advice_complete"
+        ],
+        "T07_4_Draft_internal_advice_to_hold_for_type_4_complete": [
+            "T06_Determine_necessity_of_stop_advice_complete"
+        ],
+        "T07_2_Draft_intern_advice_aspect_2_complete": [],
+        "T13_Adjust_document_X_request_unlicensed_complete": [],
+        "T09_3_Process_or_receive_external_advice_from_party_3_complete": [
+            "T06_Determine_necessity_of_stop_advice_complete"
+        ],
+        "T18_Adjust_report_Y_to_stop_indicition_complete": [
+            "T17_Check_report_Y_to_stop_indication_complete",
+            "T20_Print_report_Y_to_stop_indication_complete"
+        ],
+        "T09_2_Process_or_receive_external_advice_from_party_2_complete": [
+            "T07_1_Draft_intern_advice_aspect_1_complete",
+            "T09_4_Process_or_receive_external_advice_from_party_4_complete",
+            "T07_4_Draft_internal_advice_to_hold_for_type_4_complete",
+            "T07_2_Draft_intern_advice_aspect_2_complete"
+        ]
+    },
+    "marking": {
+        "executed": [],
+        "pending": [],
+        "included": [
+            "Confirmation_of_receipt_complete",
+            "T02_Check_Confirmation_of_receipt_complete",
+            "T03_Adjust_Confirmation_of_receipt_complete",
+            "T06_Determine_necessity_of_stop_advice_complete",
+            "T10_Determine_necessity_to_stop_indication_complete",
+            "T04_Determine_Confirmation_of_receipt_complete",
+            "T05_Print_and_send_Confirmation_of_receipt_complete",
+            "T16_Report_reasons_to_hold_request_complete",
+            "T17_Check_report_Y_to_stop_indication_complete",
+            "T19_Determine_report_Y_to_stop_indication_complete",
+            "T20_Print_report_Y_to_stop_indication_complete",
+            "T11_Create_document_X_request_unlicensed_complete",
+            "T12_Check_document_X_request_unlicensed_complete",
+            "T14_Determine_document_X_request_unlicensed_complete",
+            "T15_Print_document_X_request_unlicensed_complete",
+            "T07_1_Draft_intern_advice_aspect_1_complete",
+            "T08_Draft_and_send_request_for_advice_complete",
+            "T09_1_Process_or_receive_external_advice_from_party_1_complete",
+            "T07_5_Draft_intern_advice_aspect_5_complete",
+            "T09_4_Process_or_receive_external_advice_from_party_4_complete",
+            "T07_3_Draft_intern_advice_hold_for_aspect_3_complete",
+            "T07_4_Draft_internal_advice_to_hold_for_type_4_complete",
+            "T07_2_Draft_intern_advice_aspect_2_complete",
+            "T13_Adjust_document_X_request_unlicensed_complete",
+            "T09_3_Process_or_receive_external_advice_from_party_3_complete",
+            "T18_Adjust_report_Y_to_stop_indicition_complete",
+            "T09_2_Process_or_receive_external_advice_from_party_2_complete"
+        ]
+    }
+}

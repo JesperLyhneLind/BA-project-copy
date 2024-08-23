@@ -1,0 +1,143 @@
+{
+    "events": [
+        "Create_Fine",
+        "Send_Fine",
+        "Insert_Fine_Notification",
+        "Add_penalty",
+        "Send_for_Credit_Collection",
+        "Payment",
+        "Insert_Date_Appeal_to_Prefecture",
+        "Send_Appeal_to_Prefecture",
+        "Receive_Result_Appeal_from_Prefecture",
+        "Notify_Result_Appeal_to_Offender",
+        "Appeal_to_Judge"
+    ],
+    "conditionsFor": {
+        "Create_Fine": [],
+        "Send_Fine": [
+            "Create_Fine"
+        ],
+        "Insert_Fine_Notification": [
+            "Send_Fine"
+        ],
+        "Add_penalty": [
+            "Insert_Fine_Notification",
+            "Create_Fine"
+        ],
+        "Send_for_Credit_Collection": [
+            "Add_penalty",
+            "Send_Fine"
+        ],
+        "Payment": [
+            "Create_Fine"
+        ],
+        "Insert_Date_Appeal_to_Prefecture": [
+            "Create_Fine"
+        ],
+        "Send_Appeal_to_Prefecture": [
+            "Create_Fine"
+        ],
+        "Receive_Result_Appeal_from_Prefecture": [
+            "Send_Fine"
+        ],
+        "Notify_Result_Appeal_to_Offender": [
+            "Insert_Fine_Notification",
+            "Create_Fine"
+        ],
+        "Appeal_to_Judge": [
+            "Create_Fine"
+        ]
+    },
+    "excludesTo": {
+        "Create_Fine": [
+            "Create_Fine"
+        ],
+        "Send_Fine": [
+            "Send_Fine"
+        ],
+        "Insert_Fine_Notification": [
+            "Insert_Fine_Notification"
+        ],
+        "Add_penalty": [
+            "Add_penalty"
+        ],
+        "Send_for_Credit_Collection": [
+            "Send_for_Credit_Collection",
+            "Payment"
+        ],
+        "Payment": [],
+        "Insert_Date_Appeal_to_Prefecture": [
+            "Insert_Date_Appeal_to_Prefecture"
+        ],
+        "Send_Appeal_to_Prefecture": [
+            "Send_Appeal_to_Prefecture"
+        ],
+        "Receive_Result_Appeal_from_Prefecture": [
+            "Receive_Result_Appeal_from_Prefecture"
+        ],
+        "Notify_Result_Appeal_to_Offender": [
+            "Notify_Result_Appeal_to_Offender"
+        ],
+        "Appeal_to_Judge": [
+            "Appeal_to_Judge"
+        ]
+    },
+    "includesTo": {
+        "Create_Fine": [],
+        "Send_Fine": [],
+        "Insert_Fine_Notification": [],
+        "Add_penalty": [],
+        "Send_for_Credit_Collection": [],
+        "Payment": [],
+        "Insert_Date_Appeal_to_Prefecture": [],
+        "Send_Appeal_to_Prefecture": [],
+        "Receive_Result_Appeal_from_Prefecture": [],
+        "Notify_Result_Appeal_to_Offender": [],
+        "Appeal_to_Judge": []
+    },
+    "milestonesFor": {
+        "Create_Fine": [],
+        "Send_Fine": [],
+        "Insert_Fine_Notification": [],
+        "Add_penalty": [],
+        "Send_for_Credit_Collection": [],
+        "Payment": [],
+        "Insert_Date_Appeal_to_Prefecture": [],
+        "Send_Appeal_to_Prefecture": [],
+        "Receive_Result_Appeal_from_Prefecture": [],
+        "Notify_Result_Appeal_to_Offender": [],
+        "Appeal_to_Judge": []
+    },
+    "responseTo": {
+        "Create_Fine": [],
+        "Send_Fine": [],
+        "Insert_Fine_Notification": [
+            "Add_penalty"
+        ],
+        "Add_penalty": [],
+        "Send_for_Credit_Collection": [],
+        "Payment": [],
+        "Insert_Date_Appeal_to_Prefecture": [],
+        "Send_Appeal_to_Prefecture": [],
+        "Receive_Result_Appeal_from_Prefecture": [],
+        "Notify_Result_Appeal_to_Offender": [],
+        "Appeal_to_Judge": []
+    },
+    "marking": {
+        "executed": [],
+        "pending": [],
+        "included": [
+            "Create_Fine",
+            "Send_Fine",
+            "Insert_Fine_Notification",
+            "Add_penalty",
+            "Send_for_Credit_Collection",
+            "Payment",
+            "Insert_Date_Appeal_to_Prefecture",
+            "Send_Appeal_to_Prefecture",
+            "Receive_Result_Appeal_from_Prefecture",
+            "Notify_Result_Appeal_to_Offender",
+            "Appeal_to_Judge"
+        ]
+    }
+}

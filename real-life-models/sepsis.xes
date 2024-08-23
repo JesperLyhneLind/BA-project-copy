@@ -1,0 +1,243 @@
+{
+    "events": [
+        "ER_Registration",
+        "Leucocytes",
+        "CRP",
+        "LacticAcid",
+        "ER_Triage",
+        "ER_Sepsis_Triage",
+        "IV_Liquid",
+        "IV_Antibiotics",
+        "Admission_NC",
+        "Release_A",
+        "Return_ER",
+        "Admission_IC",
+        "Release_B",
+        "Release_C",
+        "Release_D",
+        "Release_E"
+    ],
+    "conditionsFor": {
+        "ER_Registration": [],
+        "Leucocytes": [],
+        "CRP": [],
+        "LacticAcid": [],
+        "ER_Triage": [],
+        "ER_Sepsis_Triage": [],
+        "IV_Liquid": [],
+        "IV_Antibiotics": [
+            "ER_Sepsis_Triage"
+        ],
+        "Admission_NC": [
+            "ER_Registration",
+            "ER_Triage"
+        ],
+        "Release_A": [
+            "ER_Registration",
+            "ER_Triage"
+        ],
+        "Return_ER": [
+            "Release_A",
+            "Admission_IC",
+            "Release_D",
+            "Release_E",
+            "Release_C"
+        ],
+        "Admission_IC": [
+            "ER_Registration",
+            "ER_Triage"
+        ],
+        "Release_B": [
+            "ER_Registration",
+            "Leucocytes",
+            "CRP",
+            "ER_Triage",
+            "ER_Sepsis_Triage"
+        ],
+        "Release_C": [
+            "Leucocytes",
+            "CRP",
+            "ER_Sepsis_Triage",
+            "Admission_NC"
+        ],
+        "Release_D": [
+            "Leucocytes",
+            "CRP",
+            "ER_Sepsis_Triage",
+            "Admission_NC"
+        ],
+        "Release_E": [
+            "Leucocytes",
+            "CRP",
+            "ER_Sepsis_Triage",
+            "Admission_NC"
+        ]
+    },
+    "excludesTo": {
+        "ER_Registration": [
+            "ER_Registration"
+        ],
+        "Leucocytes": [],
+        "CRP": [],
+        "LacticAcid": [],
+        "ER_Triage": [],
+        "ER_Sepsis_Triage": [
+            "ER_Sepsis_Triage"
+        ],
+        "IV_Liquid": [
+            "IV_Liquid"
+        ],
+        "IV_Antibiotics": [
+            "IV_Antibiotics"
+        ],
+        "Admission_NC": [],
+        "Release_A": [
+            "Release_A",
+            "Release_B",
+            "Release_C",
+            "Release_D",
+            "Release_E",
+            "ER_Triage",
+            "Admission_NC",
+            "Admission_IC"
+        ],
+        "Return_ER": [
+            "Return_ER",
+            "Release_B",
+            "ER_Triage",
+            "Admission_NC",
+            "Admission_IC"
+        ],
+        "Admission_IC": [
+            "ER_Triage"
+        ],
+        "Release_B": [
+            "Release_B",
+            "Release_A",
+            "Return_ER",
+            "Release_C",
+            "Release_D",
+            "Release_E",
+            "ER_Triage",
+            "CRP",
+            "LacticAcid",
+            "Leucocytes",
+            "Admission_IC"
+        ],
+        "Release_C": [
+            "Release_C",
+            "Release_A",
+            "Release_B",
+            "Release_D",
+            "Release_E",
+            "ER_Triage",
+            "CRP",
+            "Leucocytes",
+            "LacticAcid",
+            "Admission_NC",
+            "Admission_IC"
+        ],
+        "Release_D": [
+            "Release_D",
+            "Release_A",
+            "Release_B",
+            "Release_C",
+            "Release_E",
+            "ER_Triage",
+            "Leucocytes",
+            "LacticAcid",
+            "CRP",
+            "Admission_NC",
+            "Admission_IC"
+        ],
+        "Release_E": [
+            "Release_E",
+            "Release_A",
+            "Release_B",
+            "Release_C",
+            "Release_D",
+            "ER_Triage",
+            "CRP",
+            "Leucocytes",
+            "LacticAcid",
+            "Admission_NC",
+            "Admission_IC"
+        ]
+    },
+    "includesTo": {
+        "ER_Registration": [],
+        "Leucocytes": [],
+        "CRP": [],
+        "LacticAcid": [],
+        "ER_Triage": [],
+        "ER_Sepsis_Triage": [],
+        "IV_Liquid": [],
+        "IV_Antibiotics": [],
+        "Admission_NC": [],
+        "Release_A": [],
+        "Return_ER": [],
+        "Admission_IC": [],
+        "Release_B": [],
+        "Release_C": [],
+        "Release_D": [],
+        "Release_E": []
+    },
+    "milestonesFor": {
+        "ER_Registration": [],
+        "Leucocytes": [],
+        "CRP": [],
+        "LacticAcid": [],
+        "ER_Triage": [],
+        "ER_Sepsis_Triage": [],
+        "IV_Liquid": [],
+        "IV_Antibiotics": [],
+        "Admission_NC": [],
+        "Release_A": [],
+        "Return_ER": [],
+        "Admission_IC": [],
+        "Release_B": [],
+        "Release_C": [],
+        "Release_D": [],
+        "Release_E": []
+    },
+    "responseTo": {
+        "ER_Registration": [],
+        "Leucocytes": [],
+        "CRP": [],
+        "LacticAcid": [],
+        "ER_Triage": [],
+        "ER_Sepsis_Triage": [],
+        "IV_Liquid": [],
+        "IV_Antibiotics": [],
+        "Admission_NC": [],
+        "Release_A": [],
+        "Return_ER": [],
+        "Admission_IC": [],
+        "Release_B": [],
+        "Release_C": [],
+        "Release_D": [],
+        "Release_E": []
+    },
+    "marking": {
+        "executed": [],
+        "pending": [],
+        "included": [
+            "ER_Registration",
+            "Leucocytes",
+            "CRP",
+            "LacticAcid",
+            "ER_Triage",
+            "ER_Sepsis_Triage",
+            "IV_Liquid",
+            "IV_Antibiotics",
+            "Admission_NC",
+            "Release_A",
+            "Return_ER",
+            "Admission_IC",
+            "Release_B",
+            "Release_C",
+            "Release_D",
+            "Release_E"
+        ]
+    }
+}

@@ -1,0 +1,297 @@
+{
+    "events": [
+        "NEW",
+        "FIN",
+        "RELEASE",
+        "CODE-OK",
+        "BILLED",
+        "DELETE",
+        "REOPEN",
+        "CHANGE-DIAGN",
+        "STORNO",
+        "REJECT",
+        "CODE-NOK",
+        "SET-STATUS",
+        "CHANGE-END",
+        "MANUAL",
+        "JOIN-PAT",
+        "CODE-ERROR",
+        "ZDBC_BEHAN",
+        "EMPTY"
+    ],
+    "conditionsFor": {
+        "NEW": [],
+        "FIN": [
+            "NEW"
+        ],
+        "RELEASE": [
+            "NEW"
+        ],
+        "CODE-OK": [
+            "NEW"
+        ],
+        "BILLED": [
+            "NEW"
+        ],
+        "DELETE": [
+            "NEW"
+        ],
+        "REOPEN": [
+            "NEW"
+        ],
+        "CHANGE-DIAGN": [
+            "NEW"
+        ],
+        "STORNO": [
+            "CODE-ERROR"
+        ],
+        "REJECT": [
+            "STORNO",
+            "NEW"
+        ],
+        "CODE-NOK": [
+            "NEW"
+        ],
+        "SET-STATUS": [
+            "NEW"
+        ],
+        "CHANGE-END": [
+            "NEW"
+        ],
+        "MANUAL": [
+            "NEW"
+        ],
+        "JOIN-PAT": [
+            "NEW"
+        ],
+        "CODE-ERROR": [
+            "FIN",
+            "RELEASE"
+        ],
+        "ZDBC_BEHAN": [
+            "FIN",
+            "RELEASE",
+            "CHANGE-DIAGN"
+        ],
+        "EMPTY": [
+            "FIN",
+            "RELEASE"
+        ]
+    },
+    "excludesTo": {
+        "NEW": [],
+        "FIN": [
+            "NEW"
+        ],
+        "RELEASE": [
+            "NEW"
+        ],
+        "CODE-OK": [
+            "ZDBC_BEHAN",
+            "NEW",
+            "CODE-ERROR"
+        ],
+        "BILLED": [
+            "NEW",
+            "CODE-ERROR"
+        ],
+        "DELETE": [
+            "ZDBC_BEHAN",
+            "NEW",
+            "CHANGE-DIAGN",
+            "FIN",
+            "RELEASE",
+            "CODE-NOK",
+            "CODE-OK",
+            "REOPEN",
+            "MANUAL",
+            "BILLED",
+            "STORNO",
+            "REJECT",
+            "SET-STATUS",
+            "CHANGE-END",
+            "CODE-ERROR"
+        ],
+        "REOPEN": [
+            "ZDBC_BEHAN",
+            "NEW",
+            "JOIN-PAT"
+        ],
+        "CHANGE-DIAGN": [
+            "NEW"
+        ],
+        "STORNO": [
+            "ZDBC_BEHAN",
+            "NEW",
+            "CODE-ERROR"
+        ],
+        "REJECT": [],
+        "CODE-NOK": [
+            "ZDBC_BEHAN",
+            "NEW"
+        ],
+        "SET-STATUS": [
+            "ZDBC_BEHAN",
+            "EMPTY",
+            "NEW",
+            "CHANGE-DIAGN",
+            "MANUAL",
+            "CODE-ERROR",
+            "JOIN-PAT"
+        ],
+        "CHANGE-END": [
+            "JOIN-PAT",
+            "CODE-ERROR",
+            "ZDBC_BEHAN",
+            "EMPTY",
+            "NEW",
+            "SET-STATUS"
+        ],
+        "MANUAL": [
+            "JOIN-PAT",
+            "ZDBC_BEHAN",
+            "EMPTY",
+            "NEW",
+            "CHANGE-DIAGN"
+        ],
+        "JOIN-PAT": [
+            "CHANGE-END",
+            "MANUAL",
+            "CODE-ERROR",
+            "ZDBC_BEHAN",
+            "EMPTY",
+            "NEW"
+        ],
+        "CODE-ERROR": [
+            "CHANGE-END",
+            "JOIN-PAT",
+            "ZDBC_BEHAN"
+        ],
+        "ZDBC_BEHAN": [
+            "ZDBC_BEHAN",
+            "CODE-OK",
+            "DELETE",
+            "REOPEN",
+            "STORNO",
+            "REJECT",
+            "CODE-NOK",
+            "SET-STATUS",
+            "CHANGE-END",
+            "MANUAL",
+            "JOIN-PAT",
+            "CODE-ERROR",
+            "EMPTY",
+            "CHANGE-DIAGN",
+            "FIN",
+            "RELEASE"
+        ],
+        "EMPTY": [
+            "EMPTY",
+            "SET-STATUS",
+            "CHANGE-END",
+            "MANUAL",
+            "JOIN-PAT",
+            "ZDBC_BEHAN",
+            "FIN",
+            "RELEASE",
+            "CODE-OK",
+            "BILLED",
+            "STORNO",
+            "REJECT",
+            "CODE-NOK",
+            "CODE-ERROR",
+            "REOPEN",
+            "CHANGE-DIAGN"
+        ]
+    },
+    "includesTo": {
+        "NEW": [],
+        "FIN": [],
+        "RELEASE": [
+            "ZDBC_BEHAN"
+        ],
+        "CODE-OK": [],
+        "BILLED": [],
+        "DELETE": [],
+        "REOPEN": [],
+        "CHANGE-DIAGN": [],
+        "STORNO": [],
+        "REJECT": [],
+        "CODE-NOK": [],
+        "SET-STATUS": [],
+        "CHANGE-END": [],
+        "MANUAL": [],
+        "JOIN-PAT": [],
+        "CODE-ERROR": [],
+        "ZDBC_BEHAN": [],
+        "EMPTY": []
+    },
+    "milestonesFor": {
+        "NEW": [],
+        "FIN": [],
+        "RELEASE": [],
+        "CODE-OK": [],
+        "BILLED": [],
+        "DELETE": [],
+        "REOPEN": [],
+        "CHANGE-DIAGN": [],
+        "STORNO": [],
+        "REJECT": [],
+        "CODE-NOK": [],
+        "SET-STATUS": [],
+        "CHANGE-END": [],
+        "MANUAL": [],
+        "JOIN-PAT": [],
+        "CODE-ERROR": [],
+        "ZDBC_BEHAN": [],
+        "EMPTY": []
+    },
+    "responseTo": {
+        "NEW": [],
+        "FIN": [],
+        "RELEASE": [],
+        "CODE-OK": [],
+        "BILLED": [],
+        "DELETE": [],
+        "REOPEN": [],
+        "CHANGE-DIAGN": [],
+        "STORNO": [],
+        "REJECT": [],
+        "CODE-NOK": [],
+        "SET-STATUS": [],
+        "CHANGE-END": [],
+        "MANUAL": [],
+        "JOIN-PAT": [],
+        "CODE-ERROR": [
+            "CODE-NOK"
+        ],
+        "ZDBC_BEHAN": [
+            "BILLED"
+        ],
+        "EMPTY": []
+    },
+    "marking": {
+        "executed": [],
+        "pending": [],
+        "included": [
+            "NEW",
+            "FIN",
+            "RELEASE",
+            "CODE-OK",
+            "BILLED",
+            "DELETE",
+            "REOPEN",
+            "CHANGE-DIAGN",
+            "STORNO",
+            "REJECT",
+            "CODE-NOK",
+            "SET-STATUS",
+            "CHANGE-END",
+            "MANUAL",
+            "JOIN-PAT",
+            "CODE-ERROR",
+            "ZDBC_BEHAN",
+            "EMPTY"
+        ]
+    }
+}

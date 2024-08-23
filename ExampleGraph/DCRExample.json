@@ -1,0 +1,40 @@
+{
+    "events": [
+        "A",
+        "B",
+        "C"
+    ],
+    "conditionsFor": {
+        "B": [
+            "A"
+        ]
+    },
+    "milestonesFor": {
+    },
+    "responseTo": {  
+    },
+    "excludesTo": {
+        "B": [
+            "B"
+        ],
+        "C": [
+            "A"
+        ]
+    },
+    "includesTo": {
+        "B": [
+            "C"
+        ]
+    },
+    "marking": {
+        "executed": [],
+        "pending": [
+            "C"
+        ],
+        "included": [
+            "A",
+            "B"
+            
+        ]
+    }
+}
